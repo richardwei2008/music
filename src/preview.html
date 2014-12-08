@@ -1,0 +1,164 @@
+<?php ob_start(); ?>
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="apple-mobile-web-app-status-bar-style" content="black">
+      <meta name="format-detection" content="telephone=no">
+      <meta name="description" content="独乐何不众乐？欢庆岂能一人独享！">
+      <title>G.H.MUMM-Celebrating F1rst</title>
+      <!-- Path to Framework7 Library CSS-->
+      <link rel="stylesheet" href="css/jquery.mobile-1.4.4.min.css">
+
+      <!-- Bootstrap styles -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+
+      <!-- Path to your custom app styles-->
+      <link rel="stylesheet" href="css/my-app.css">
+      <link rel="stylesheet" href="css/my-app.preview.css">
+      <link rel="stylesheet" href="css/my-app.wowpreview.css">
+      <link rel="stylesheet" href="css/loader.css">
+
+      <link rel="stylesheet" type="text/css" href="plugins/slider/engine2/style.css" />
+
+      <!-- End WOWSlider.com HEAD section -->
+      <!-- Start Slider Centering-->
+      <style>
+          .share-mask {
+              position: absolute;
+              left : 0;
+              top : 0;
+              display: none;
+              z-index:9999999;
+          }
+          .ws-wrapper-centered {
+              position: relative;
+              width: 100%;
+              height: 100%;
+              max-height: 1280px;
+              margin: 0 auto;
+              overflow: hidden;
+          }
+          .ws-wrapper-centered > div {
+              display: table;
+              -webkit-transform: translateY(-0%) translateX(-0%);
+              transform: translateY(-0%) translateX(-0%);
+              left: 0%;
+              top: 0%;
+              opacity: 1;
+          }
+
+      </style>
+
+
+  <script type="text/javascript" src="js/app.wechat.share-0.1.1.js"></script>
+  <script type="text/javascript" src="js/jquery.wowslider.modify.js"></script>
+  <script type="text/javascript" src="js/beyond.jquery.extension-1.0.js"></script>
+  <script type="text/javascript" src="js/jquery.mobile-1.4.4.min.js"></script>
+  <script type="text/javascript" src="js/app-1.0.0.js"></script>
+  </head>
+  <body class="ui-mobile-viewport ui-overlay-a">
+  <!-- Status bar overlay for fullscreen mode-->
+  <!--<div class="statusbar-overlay"></div>-->
+  <!-- Panels overlay-->
+  <!--<div class="panel-overlay"></div>-->
+  <!-- Views, and they are tabs-->
+  <!-- We need to set "toolbar-through" class on it to keep space for our tab bar-->
+  <div class="loader"></div>
+
+  <div id="messageMask" onClick="document.getElementById('messageMask').style.display='none';"  class="message-mask">
+      <div id="errorBox" class="message-content" align="center">
+          <div style="float:right; width:20px; height:20px;cursor:hand;background-image:url('images/close.png');background-repeat: no-repeat;"></div>
+          <div id="errorMsg" class="message-font" align="center">
+              错误提示！
+          </div>
+      </div>
+  </div>
+  <div data-role="page" id="view-preview" data-theme="d" class="view-preview-page">
+      <div data-role="content" class="ui-content-custom ">
+          <div class="preview-page-fill"></div>
+          <div class="preview-page-content">
+              <div class="audio-preview-section">
+                  <audio loop="loop" src="http://com-beyond2005-test.qiniudn.com/mumm_music_MUMM_DG_Music-part4.mp3" type="audio/mpeg">
+                      您的浏览器不支持 audio 标签。
+                      <source src="http://com-beyond2005-test.qiniudn.com/mumm_music_MUMM_DG_Music-part4.ogg" type="audio/ogg">
+                      <source src="http://com-beyond2005-test.qiniudn.com/mumm_music_MUMM_DG_Music-part4.wav" type="audio/wav">
+                      <source src="http://com-beyond2005-test.qiniudn.com/mumm_music_MUMM_DG_Music-part4.mp3" type="audio/mpeg">
+                  </audio>
+              </div>
+              <div class="mv-preview-section mv-preview-section-bg">
+
+                  <div class="ws-wrapper-centered">
+                      <div class="ws-play-cover ">
+                          <div class="ws-play-face"></div>
+                          <div id="ws-play-first" class="ws-play-first wowslider-line-height-custom">
+                              <img class="ws-cover-images" src="images/samples/C.jpg" width="100%"/>
+                          </div>
+                      </div>
+                      <div id="ws-play-watermark" class="ws-play-watermark" style="background: url(images/album-watermark1.png) no-repeat center;background-size: 100% 100%;"></div>
+                      <!-- Start WOWSlider.com BODY section --> <!-- add to the <body> of your page -->
+                      <div id="wowslider-container1">
+                          <div class="ws_images">
+
+                              <div id="share-cover" onClick="document.getElementById('share-cover').style.display='none';"  class="share-mask">
+                                  <img src="images/share-mask.png" width="100%" height="100%">
+                              </div>
+                              <ul>
+                                  <li class="wowslider-line-height-custom"><img class="flash-images" src="images/samples/1.jpg" alt="" title="" id="wows1_0"/></li>
+                                  <li class="wowslider-line-height-custom"><img class="flash-images" src="images/samples/2.jpg" alt="" title="" id="wows1_1"/></li>
+                                  <li class="wowslider-line-height-custom"><img class="flash-images" src="images/samples/3.jpg" alt="" title="" id="wows1_2"/></li>
+                                  <li class="wowslider-line-height-custom"><img class="flash-images" src="images/samples/4.jpg" alt="" title="" id="wows1_3"/></li>
+                                  <li class="wowslider-line-height-custom"><img class="flash-images" src="images/samples/5.jpg" alt="" title="" id="wows1_4"/></li>
+                              </ul></div>
+                      </div>
+                      <script type="text/javascript" src="js/wowslider.js"></script>
+                      <script type="text/javascript" src="plugins/slider/engine2/script.js"></script>
+                      <!-- End WOWSlider.com BODY section -->
+
+                  </div>
+
+              </div>
+          </div>
+          <div class="preview-page-footer">
+              <div id="button-share" class="ui-button-custom button-to-share">
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <script>
+      (function() {
+          var isAppleMobileDevice = function () {
+              return (/iphone|ipod|ipad|Macintosh/i.test(navigator.userAgent.toLowerCase()));
+          };
+          var playAudio = function() {
+              var audio = $('.audio-preview-section').children('audio')[0];
+              if (!audio.paused) {
+                  audio.pause();
+              }
+              //                App.debug(audio.src);
+              audio.play();
+          };
+
+          $.mobile.loading( 'hide');
+
+          $(".ws-play-cover").unbind("click").bind("click", function(e) {
+              return (function() {
+                  $(".ws-play-cover").fadeOut("slow");
+                  playAudio();
+              })();
+          });
+
+          $("#button-share").unbind("click").bind("click", function() {
+              return (function() {
+                  document.getElementById('share-cover').style.display='block';
+              })();
+          });
+
+      })();
+  </script>
+
+  </body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="独乐何不众乐？欢庆岂能一人独享！">
+    <title>G.H.MUMM-Celebrating First</title>
+
+
+    <!-- Path to Framework7 Library CSS-->
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.4.min.css">
+
+    <!-- Bootstrap styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Generic page styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/my-app.css">
+     <link rel="stylesheet" href="css/my-app.upload.css">
+    <link rel="stylesheet" href="css/loader.css">
+    <!--<link rel="stylesheet" href="less/my-app-face.css">-->
+    <style>
+        /* Let's get this party started */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        /* Track */
+        ::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
+            background: rgba(195,0,47, 1);
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+        }
+        ::-webkit-scrollbar-thumb:window-inactive {
+            background: rgba(195,0,47, 1);
+        }
+
+    </style>
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/beyond.jquery.extension-1.0.js"></script>
+
+
+</head>
+<body class="ui-mobile-viewport ui-overlay-a">
+<!-- Status bar overlay for fullscreen mode-->
+<!--<div class="statusbar-overlay"></div>-->
+<!-- Panels overlay-->
+<!--<div class="panel-overlay"></div>-->
+<!-- Views, and they are tabs-->
+<!-- We need to set "toolbar-through" class on it to keep space for our tab bar-->
+  <div class="loader"></div>
+
+<div id="messageMask" onClick="document.getElementById('messageMask').style.display='none';"  class="message-mask">
+    <div id="errorBox" class="message-content" align="center">
+        <div style="float:right; width:20px; height:20px;cursor:hand;background-image:url('images/close.png');background-repeat: no-repeat;"></div>
+        <div id="errorMsg" class="message-font" align="center">
+            错误提示！
+        </div>
+    </div>
+</div>
+
+    <div data-role="page" id="view-rule" data-theme="d" class="view-rule2-page">
+        <div data-role="content" class="ui-content-custom ">
+            <div class="rule-page-fill"></div>
+            <div class="rule-page-content">
+                <!--<a href="#" onclick="window.history.back()"><div class="ui-button-custom ui-button-back">-->
+
+                <!--</div></a>-->
+            </div>
+        </div>
+    </div>
+
+
+<script type="text/javascript" src="js/jquery.mobile-1.4.4.min.js"></script>
+<script type="text/javascript" src="js/app.wechat.share-0.1.1.js"></script>
+<script type="text/javascript" src="js/app-1.0.0.js"></script>
+</body>
+</html>
